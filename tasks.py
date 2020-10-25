@@ -13,6 +13,9 @@ from pelican import main as pelican_main
 from pelican.server import ComplexHTTPRequestHandler, RootedHTTPServer
 from pelican.settings import DEFAULT_CONFIG, get_settings_from_file
 
+from branding import *
+
+
 SETTINGS_FILE_BASE = 'pelicanconf.py'
 SETTINGS = {}
 SETTINGS.update(DEFAULT_CONFIG)
@@ -25,7 +28,7 @@ CONFIG = {
     # Output path. Can be absolute or relative to tasks.py. Default: 'output'
     'deploy_path': SETTINGS['OUTPUT_PATH'],
     # Github Pages configuration
-    'github_pages_branch': 'main',
+    'github_pages_branch': 'gh-pages',
     'commit_message': "'Publish site on {}'".format(datetime.date.today().isoformat()),
     # Host and port for `serve`
     'host': 'localhost',
@@ -80,7 +83,7 @@ def preview(c):
     """Build production version of site"""
     pelican_run('-s {settings_publish}'.format(**CONFIG))
 
-@task
+@task(name="live")
 def livereload(c):
     """Automatically reload browser tab upon file modification."""
     from livereload import Server

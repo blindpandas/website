@@ -1,0 +1,32 @@
+<!-- Footer -->
+<footer class="bg-primary text-white mt-4 mx-auto">
+<div class="container">
+  <div class="p-5 text-center">
+    <nav>
+    <ul class="nav text-light justify-content-center flex-sm-column flex-md-row">
+        {% for label, url in MAIN_NAVIGATION_MENU %}
+        <li class="nav-item">
+          <a class="nav-link active" href="{{ url }}">{{ label }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    </nav>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-10 m-3 m-md-4">
+      {% for title, url, icon in SOCIAL_LINKS %}
+      <a class="btn btn-outline-light btn-social mx-1" href="{{ url }}">
+        <i class="fa-fw fa-3x fa-{{ icon }}"></i>
+        <span class="sr-only">{{ title }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+
+    <p class="m-2 text-center text-light">
+    <p>Copyright &copy; {{ AUTHOR }} 2020</p>
+    <p class="m-1">{% include "includes/attribution.html" %}</p>
+    </p>
+  </div>
+</div>
+</footer>
