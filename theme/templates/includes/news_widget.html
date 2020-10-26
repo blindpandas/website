@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row p-2">
     <div class="col-md-4 offset-md-1">
-      <h3 class="display-4 font-weight-light mt-5 mb-3">Latest News</h3>
+      <h3 class="text-4x font-weight-light mt-5 mb-3">Latest News</h3>
       <ul class="list-unstyled m-3 w-75">
       {% for article in dates[:10]| selectattr("category", "eq", "news") %}
       <li class="media">
@@ -24,7 +24,7 @@
       </ul>
     </div>
     <div class="col-md-5 offset-md-1">
-    <h3 class="display-4 font-weight-light mt-6 mb-3">Latest Tweets</h3>
+    <h3 class="text-4x font-weight-light mt-6 mb-3">Latest Tweets</h3>
     <a class="twitter-timeline" data-width="{{ TWITTER_EMBED_WIDTH }}" data-height="{{ TWITTER_EMBED_HEIGHT }}" href="{{ TWITTER_EMBED_URL }}?ref_src=twsrc%5Etfw">{{ TWITTER_EMBED_TITLE }}</a>
     </div>
   </div>

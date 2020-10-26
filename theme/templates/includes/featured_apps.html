@@ -4,10 +4,11 @@
     <div class="row text-center text-info">
     {% for app in FEATURED_APPS %}
       <div class="col-md-3 m-3 m-md-5">
-        <img src="{{app.logo}}" class="img-fluid" alt="">
-        <h2>{{ app.title }}</h2>
-        <p class="w-75">{{app.lead_text}}</p>
-        <a class="btn btn-outline-dark btn-lg" href="{{ app.url }}">Get {{ app.title }}</a>
+        <a href="{{ app.url }}" aria-describedby="{{ app.name}}-desc">
+          <img src="{{app.logo}}" class="img-fluid" alt="">
+          <h2>{{ app.title }}</h2>
+        </a>
+        <p id="{{ app.name}}-desc" class="w-75">{{app.lead_text}}</p>
       </div>
     {% endfor %}
     </div>
