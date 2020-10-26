@@ -8,6 +8,17 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
 hr {
   max-width: 100px;
   margin: 25px auto 0;
@@ -62,4 +73,52 @@ hr.light {
 
 .bg-bookworm {
   background-color: #77216F !important;
+}
+
+.text-xs {
+  font-size: .75em;
+}
+
+.text-sm {
+  font-size: .875em;
+}
+
+.text-1x {
+  font-size: 1em;
+}
+
+.text-2x {
+  font-size: 2em;
+}
+
+.text-3x {
+  font-size: 3em;
+}
+
+.text-4x {
+  font-size: 4em;
+}
+
+.text-5x {
+  font-size: 5em;
+}
+
+.text-6x {
+  font-size: 6em;
+}
+
+.text-7x {
+  font-size: 7em;
+}
+
+.text-8x {
+  font-size: 8em;
+}
+
+.text-9x {
+  font-size: 9em;
+}
+
+.text-10x {
+  font-size: 10em;
 }
