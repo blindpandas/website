@@ -1,12 +1,12 @@
 <!-- Features -->
 <section class="p-3 p-md-4 m-3 bg-light" aria-label="Featured Apps">
   <div class="container-fluid d-flex align-items-center flex-column">
-    <div class="row text-center text-info">
+    <div class="row text-center">
     {% for app in FEATURED_APPS %}
       <div class="col-md-3 m-3 m-md-5">
-        <a href="{{ app.url }}" aria-describedby="{{ app.name}}-desc">
-          <img src="{{app.logo}}" class="img-fluid" alt="">
-          <h2>{{ app.title }}</h2>
+        <a class="featured-app-link" href="{{ app.url }}" aria-describedby="{{ app.name}}-desc">
+          <img src="{{app.logo}}" class="img-fluid m-3" alt="">
+          <h2 class="text-dark">{{ app.title }}</h2>
         </a>
         <p id="{{ app.name}}-desc" class="w-75">{{app.lead_text}}</p>
       </div>

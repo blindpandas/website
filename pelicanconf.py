@@ -17,6 +17,7 @@ SITESUBTITLE = "Free & high quality software for the blind and visually impaired
 SITEURL = 'https://blindpandas.com'
 RELATIVE_URLS = True
 DEVELOPMENT = True
+LOAD_CONTENT_CACHE = False
 
 # Re-map URLs
 ARTICLE_URL = 'blog/{slug}.html'
@@ -55,7 +56,8 @@ EXTRA_PATH_METADATA = {
 }
 
 # Plugins
-PLUGINS = ['seo',]
+PLUGIN_PATHS = ('plugins',)
+PLUGINS = ('seo', 'htmlcompress',)
 
 # SEO
 SEO_REPORT = True  # To enable this feature

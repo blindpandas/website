@@ -49,7 +49,7 @@ MAIN_NAVIGATION_MENU = (
 )
 
 # Twitter embed
-TWITTER_EMBED_URL = "https://twitter.com/mush42"
+TWITTER_USER = 'mush42'
 TWITTER_EMBED_TITLE = "Tweets by Musharraf"
 TWITTER_EMBED_WIDTH = 500
 TWITTER_EMBED_HEIGHT= 500
