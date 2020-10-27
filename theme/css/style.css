@@ -122,3 +122,8 @@ hr.light {
 .text-10x {
   font-size: 10em;
 }
+
+.featured-app-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
