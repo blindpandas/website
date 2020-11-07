@@ -29,8 +29,6 @@ PAGE_SAVE_AS = '{slug}.html'
 PAGE_LANG_URL = '{slug}-{lang}.html'
 
 # We don't need to generate the following
-TAG_SAVE_AS = ''
-AUTHOR_SAVE_AS = ''
 DRAFT_SAVE_AS = ''
 DRAFT_LANG_SAVE_AS = ''
 DRAFT_PAGE_SAVE_AS = ''
@@ -47,6 +45,7 @@ DEFAULT_PAGINATION = 5
 # Custom theme
 THEME  = Path.cwd() / "theme"
 THEME_STATIC_DIR = 'theme'
+
 # Static files
 STATIC_PATHS = ['static', 'extra/CNAME']
 EXTRA_PATH_METADATA = {

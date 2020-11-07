@@ -13,9 +13,6 @@
 {% endif %}
 
 <!-- Open Graph -->
-{% for admin in FACEBOOK_ADMINS %}
-  <meta property="fb:admins" content="{{ admin }}" />
-{% endfor %}
 <meta property="og:site_name" content="{{ SITENAME }}"/>
 <meta property="og:type" content="website" "/>
 <meta property="og:title" content="{{ SITENAME }}"/>
@@ -28,6 +25,7 @@
 <meta property="og:image:height" content="256" />
 <meta property="og:image:alt" content="The logo of blind pandas: an image of a panda in a circle" />
 
+<!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@{{ TWITTER_USER }}">
 <meta name="twitter:title" content="{{ SITENAME }}">
