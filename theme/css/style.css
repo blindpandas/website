@@ -79,3 +79,24 @@ hr.light {
   color: #0056b3;
   text-decoration: none;
 }
+
+.btn-social {
+  border-radius: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.btn-social:hover,
+.btn-social:focus {
+  background-color: rgba(230, 230, 230, .7);
+}
