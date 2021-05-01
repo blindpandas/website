@@ -9,24 +9,35 @@ sys.path.pop(0)
 
 PATH = 'content'
 AUTHOR = 'Blind Pandas Team'
+SITEURL = 'https://blindpandas.com'
 SITENAME = 'Blind Pandas'
+SITESUBTITLE = "Upholding accessibility in words and action"
 TIMEZONE = 'Africa/Khartoum'
 DEFAULT_LANG = 'en'
 DEFAULT_CATEGORY  = 'Uncategorised'
-SITESUBTITLE = "Free & high quality software for the blind and visually impaired "
-SITEURL = 'https://blindpandas.com'
 RELATIVE_URLS = True
 DEVELOPMENT = True
 LOAD_CONTENT_CACHE = False
+DIRECT_TEMPLATES = ['index',]
 
 # Re-map URLs
-ARTICLE_URL = 'blog/{slug}.html'
-ARTICLE_SAVE_AS = 'blog/{slug}.html'
-ARTICLE_LANG_URL = 'blog/{slug}-{lang}.html'
-ARTICLE_LANG_SAVE_AS = 'blog/{slug}-{lang}.html'
-PAGE_URL = '{slug}.html'
-PAGE_SAVE_AS = '{slug}.html'
-PAGE_LANG_URL = '{slug}-{lang}.html'
+ARTICLE_URL = 'blog/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
+ARTICLE_LANG_URL = 'blog/{slug}-{lang}'
+ARTICLE_LANG_SAVE_AS = 'blog/{slug}-{lang}/index.html'
+AUTHOR_URL = 'blog/author/{slug}.html'
+AUTHOR_SAVE_AS = 'blog/author/{slug}.html'
+CATEGORY_URL = 'blog/category/{slug}.html'
+CATEGORY_SAVE_AS = 'blog/category/{slug}.html'
+TAG_URL = 'blog/tag/{slug}.html'
+TAG_SAVE_AS = 'blog/tag/{slug}.html'
+AUTHORS_SAVE_AS = 'blog/authors.html'
+CATEGORIES_SAVE_AS = 'blog/categories.html'
+TAGS_SAVE_AS = 'blog/tags.html'
+PAGE_URL = '{slug}'
+PAGE_SAVE_AS = '{slug}/index.html'
+PAGE_LANG_URL = '{slug}-{lang}'
+PAGE_LANG_SAVE_AS  = '{slug}-{lang}/index.html'
 
 # We don't need to generate the following
 DRAFT_SAVE_AS = ''
@@ -40,7 +51,6 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-DEFAULT_PAGINATION = 5
 
 # Custom theme
 THEME  = Path.cwd() / "theme"
@@ -56,7 +66,7 @@ EXTRA_PATH_METADATA = {
 
 # Plugins
 PLUGIN_PATHS = ('plugins',)
-PLUGINS = ('seo', 'htmlcompress',)
+PLUGINS = ('seo', 'htmlcompress', 'readtime',)
 
 # SEO
 SEO_REPORT = True  # To enable this feature
