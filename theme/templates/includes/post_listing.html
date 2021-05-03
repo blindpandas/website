@@ -1,9 +1,9 @@
-<div class="row text-black" role="list">
+<div class="row" role="list">
     {% for post in posts %}
     <div class="col-12" role="listitem">
       <div class="card p-md-1 m-md-1">
-        <div class="card-body">
-          <h3 class="card-title" role="heading">
+        <div class="card-body text-black">
+          <h3 class="text-black" role="heading">
             <a href="{{ SITEURL }}/{{ post.url}}" class="">{{ post.title }}</a>
           </h3>
           <p class="card-subtitle mb-2 text-primary">

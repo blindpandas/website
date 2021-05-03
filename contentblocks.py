@@ -29,14 +29,14 @@ FEATURED = (
     Featured(
         name="software",
         title="Software",
-        url="bookworm",
+        url="software",
         icon="fa-gifts",
         lead_text="We develop free, open-source, and highly accessible applications for blind and visually impaired computer users."
     ),
     Featured(
         name="training",
         title="Traning",
-        url="/training",
+        url="training",
         icon="fa-chalkboard-teacher",
         lead_text=(
             "We offer tutorials and booklets on selected programming topics for the next generation of blind and visually impaired makers.",
@@ -59,13 +59,10 @@ FEATURED = (
 )
 
 # Main navigation menu
-MAIN_NAVIGATION_MENU = (
-    ("Blog", "/blog/"),
-    ("Bookworm", "/bookworm/"),
-    ("Audio Themes", "/audio-themes/"),
-    ("Developers", "/dev/"),
-    ("About", "/about/"),
-)
+MAIN_NAVIGATION_MENU = [
+    (fet.title, f"/{fet.url}")
+    for fet in FEATURED
+]
 
 # Twitter embed
 TWITTER_USER = 'blindpandas'
