@@ -59,10 +59,7 @@ FEATURED = (
 )
 
 # Main navigation menu
-MAIN_NAVIGATION_MENU = [
-    (fet.title, f"/{fet.url}")
-    for fet in FEATURED
-]
+MAIN_NAVIGATION_MENU = [("Blog", "blog"),]
 
 # Twitter embed
 TWITTER_USER = 'blindpandas'
